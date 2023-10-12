@@ -42,5 +42,6 @@ function cart_pc(n,p){
         let t= k1[i]*v[i]
         total+=t
     }
-    console.log(`The total amount is :${total}$`)
+    let deci = 1-(Math.ceil(total)-total)
+    console.log(`The total amount is :${Math.floor(total)}$ ${Math.ceil(deci*100)} Cents`)
  }
